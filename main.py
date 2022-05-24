@@ -19,6 +19,8 @@ class Window:
     def choose_file(self):
         try:
             filename = askopenfilename()
+            if [filename] == [()]:
+                return
             if filename in self.files:
                 raise RecursionError()
             self.files.append(filename)
@@ -30,13 +32,13 @@ class Window:
     def save(self):
         try:
             option = self.varF2.get()
-            write(files=self.files, option=option)
+            write(file_names=self.files, option=option)
             self.files.clear()
             messagebox.showinfo('OK!', 'OK!')
             self.varF2.set(self.option_text)
             self.clear()
         except ChoiceError:
-            messagebox.showerror('Choice Error', 'Make choice!')
+            messagebox.showerror('Choice Error', 'Choose files and select option!')
 
 
     def refrash_tree(self):
