@@ -18,7 +18,7 @@ Deletion error - occurs when no item is selected to delete.
 
 Recursion error: occurs when trying to select the same file more than 1 time
 
-![de](https://user-images.githubusercontent.com/106014646/170174345-4bb464f9-d292-4372-a52b-2f9b3bbfd4cd.png)
+![re](https://user-images.githubusercontent.com/106014646/170174465-49503691-2c0b-429f-9374-aecce678a75e.png)
 
 
 Choice error: occurs when option or file are not selected
